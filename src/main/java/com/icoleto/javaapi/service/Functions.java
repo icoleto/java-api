@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 public class Functions {
 
   public Long fibonacci(Long num) {
-    return num == 1 ? 1 : fibonacci(num - 1) + fibonacci(num - 2);
+    return num <= 1 ? num : fibonacci(num - 1) + fibonacci(num - 2);
   }
 }
